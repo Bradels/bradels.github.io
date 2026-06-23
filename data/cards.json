@@ -779,6 +779,336 @@
         "kind": "draw",
         "amount": 1
       }
+    },
+    {
+      "id": "wild_growth",
+      "name": "Wild Growth",
+      "type": "spell",
+      "cost": 2,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Give a creature you control +2/+2.",
+      "flavor": "The grove gives freely to those who fight for it.",
+      "color": "#739959",
+      "art": "card_art/grove_mother.png",
+      "faction": "wilds",
+      "set": "core",
+      "when_to_play": "Pump your best attacker to win a fight or push extra damage.",
+      "effect": {
+        "kind": "buff",
+        "power": 2,
+        "toughness": 2
+      }
+    },
+    {
+      "id": "primal_surge",
+      "name": "Primal Surge",
+      "type": "spell",
+      "cost": 1,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Give a creature you control +1/+1.",
+      "flavor": "A breath of the deep wood, and the beast remembers its strength.",
+      "color": "#739959",
+      "art": "card_art/forest_wolf.png",
+      "faction": "wilds",
+      "set": "core",
+      "when_to_play": "A cheap combat trick — swing a trade your way.",
+      "effect": {
+        "kind": "buff",
+        "power": 1,
+        "toughness": 1
+      }
+    },
+    {
+      "id": "verdant_renewal",
+      "name": "Verdant Renewal",
+      "type": "spell",
+      "cost": 2,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Gain 4 life.",
+      "flavor": "What the wood takes, the wood returns.",
+      "color": "#739959",
+      "art": "card_art/antlered_guardian.png",
+      "faction": "wilds",
+      "set": "core",
+      "when_to_play": "Climb out of burn range when the race is tight.",
+      "effect": {
+        "kind": "heal",
+        "amount": 4
+      }
+    },
+    {
+      "id": "unwind_fate",
+      "name": "Unwind Fate",
+      "type": "spell",
+      "cost": 4,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Destroy target enemy creature.",
+      "flavor": "She simply edits the page where you were standing.",
+      "color": "#668ccc",
+      "art": "card_art/cartographer_endings.png",
+      "faction": "lattice",
+      "set": "core",
+      "when_to_play": "Answer their biggest threat outright, regardless of its size.",
+      "effect": {
+        "kind": "destroy"
+      }
+    },
+    {
+      "id": "deep_calculus",
+      "name": "Deep Calculus",
+      "type": "spell",
+      "cost": 3,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Draw 3 cards.",
+      "flavor": "Every variable accounted for, twice.",
+      "color": "#668ccc",
+      "art": "card_art/house_oddsmaker.png",
+      "faction": "lattice",
+      "set": "core",
+      "when_to_play": "Refill a thinning hand and pull ahead on cards.",
+      "effect": {
+        "kind": "draw",
+        "amount": 3
+      }
+    },
+    {
+      "id": "ward_of_tides",
+      "name": "Ward of Tides",
+      "type": "spell",
+      "cost": 1,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Give a creature you control +0/+3.",
+      "flavor": "The water rises to meet the blow.",
+      "color": "#668ccc",
+      "art": "card_art/lattice_watcher.png",
+      "faction": "lattice",
+      "set": "core",
+      "when_to_play": "Save a blocker, or turn a trade in your favour on defence.",
+      "effect": {
+        "kind": "buff",
+        "power": 0,
+        "toughness": 3
+      }
+    },
+    {
+      "id": "battle_fury",
+      "name": "Battle Fury",
+      "type": "spell",
+      "cost": 2,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Give a creature you control +3/+1.",
+      "flavor": "Anger is just enthusiasm with somewhere to go.",
+      "color": "#d66642",
+      "art": "card_art/pyre_singer.png",
+      "faction": "warband",
+      "set": "core",
+      "when_to_play": "Turn an attacker into a finisher; great with trample or evasion.",
+      "effect": {
+        "kind": "buff",
+        "power": 3,
+        "toughness": 1
+      }
+    },
+    {
+      "id": "warcry",
+      "name": "Warcry",
+      "type": "spell",
+      "cost": 1,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Deal 1 damage to a creature or the enemy.",
+      "flavor": "A shout that lands like a stone.",
+      "color": "#d66642",
+      "art": "card_art/ashreach_reaver.png",
+      "faction": "warband",
+      "set": "core",
+      "when_to_play": "Cheap reach to pick off a 1-toughness creature or chip the face.",
+      "effect": {
+        "kind": "damage",
+        "amount": 1
+      }
+    },
+    {
+      "id": "molten_sunder",
+      "name": "Molten Sunder",
+      "type": "spell",
+      "cost": 5,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Destroy target enemy creature.",
+      "flavor": "Nothing survives the heart of the pyre.",
+      "color": "#d66642",
+      "art": "card_art/bonfire_berserker.png",
+      "faction": "warband",
+      "set": "core",
+      "when_to_play": "Melt down their biggest body no matter how large.",
+      "effect": {
+        "kind": "destroy"
+      }
+    },
+    {
+      "id": "dawns_mercy",
+      "name": "Dawn's Mercy",
+      "type": "spell",
+      "cost": 2,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Gain 5 life.",
+      "flavor": "The light asks nothing in return. It rarely does.",
+      "color": "#e0cc6b",
+      "art": "card_art/templar_healer.png",
+      "faction": "holy",
+      "set": "core",
+      "when_to_play": "Buy time against aggro and reset the race.",
+      "effect": {
+        "kind": "heal",
+        "amount": 5
+      }
+    },
+    {
+      "id": "blessing_of_light",
+      "name": "Blessing of Light",
+      "type": "spell",
+      "cost": 2,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Give a creature you control +2/+2.",
+      "flavor": "Stand, and be made greater.",
+      "color": "#e0cc6b",
+      "art": "card_art/alabaster_sworn.png",
+      "faction": "holy",
+      "set": "core",
+      "when_to_play": "Grow a lifelinker or a blocker to dominate combat.",
+      "effect": {
+        "kind": "buff",
+        "power": 2,
+        "toughness": 2
+      }
+    },
+    {
+      "id": "verdant_sprite",
+      "name": "Verdant Sprite",
+      "type": "creature",
+      "cost": 2,
+      "power": 1,
+      "toughness": 1,
+      "keywords": [
+        "Flying"
+      ],
+      "text": "Flying. When it enters, draw a card.",
+      "flavor": "A spark of the grove, gone before you focus on it.",
+      "color": "#739959",
+      "art": "card_art/swift_falcon.png",
+      "faction": "wilds",
+      "set": "core",
+      "when_to_play": "Evasive chip damage that replaces itself — pure value.",
+      "etb": {
+        "kind": "draw",
+        "amount": 1
+      }
+    },
+    {
+      "id": "emberling_imp",
+      "name": "Emberling Imp",
+      "type": "creature",
+      "cost": 2,
+      "power": 2,
+      "toughness": 1,
+      "keywords": [
+        "Haste"
+      ],
+      "text": "Haste. When it enters, deal 1 damage to a creature or the enemy.",
+      "flavor": "It arrives already on fire and already angry.",
+      "color": "#d66642",
+      "art": "card_art/kardum_duellist.png",
+      "faction": "warband",
+      "set": "core",
+      "when_to_play": "Snap off a 1-toughness blocker on arrival, then swing.",
+      "etb": {
+        "kind": "damage",
+        "amount": 1
+      }
+    },
+    {
+      "id": "dawnpriest_acolyte",
+      "name": "Dawnpriest Acolyte",
+      "type": "creature",
+      "cost": 3,
+      "power": 2,
+      "toughness": 2,
+      "keywords": [
+        "Lifelink"
+      ],
+      "text": "Lifelink. When it enters, gain 2 life.",
+      "flavor": "Her first prayer each morning is for someone she has never met.",
+      "color": "#e0cc6b",
+      "art": "card_art/sun_cleric.png",
+      "faction": "holy",
+      "set": "core",
+      "when_to_play": "Stabilise immediately, then drain back further each combat.",
+      "etb": {
+        "kind": "heal",
+        "amount": 2
+      }
+    },
+    {
+      "id": "glasswing_drake",
+      "name": "Glasswing Drake",
+      "type": "creature",
+      "cost": 4,
+      "power": 3,
+      "toughness": 3,
+      "keywords": [
+        "Flying"
+      ],
+      "text": "Flying. When it enters, deal 2 damage to a creature or the enemy.",
+      "flavor": "Cut from the lattice itself, it pays its entry in blood.",
+      "color": "#668ccc",
+      "art": "card_art/mirror_construct.png",
+      "faction": "lattice",
+      "set": "core",
+      "when_to_play": "A flyer that clears a blocker or burns the face as it lands.",
+      "etb": {
+        "kind": "damage",
+        "amount": 2
+      }
+    },
+    {
+      "id": "warden_of_thorns",
+      "name": "Warden of Thorns",
+      "type": "creature",
+      "cost": 4,
+      "power": 3,
+      "toughness": 4,
+      "keywords": [
+        "Reach",
+        "Trample"
+      ],
+      "text": "Reach, Trample.",
+      "flavor": "The old wood remembers every axe.",
+      "color": "#739959",
+      "art": "card_art/antlered_guardian.png",
+      "faction": "wilds",
+      "set": "core",
+      "when_to_play": "A flexible midrange body that grounds fliers and pushes damage."
     }
   ]
 }
