@@ -1,684 +1,784 @@
 {
-	"cards": [
-		{
-			"art": "card_art/wildland.png",
-			"color": "#618c4d",
-			"cost": 0,
-			"faction": "neutral",
-			"flavor": "",
-			"id": "wildland",
-			"keywords": [],
-			"name": "Wildland",
-			"power": 0,
-			"set": "core",
-			"text": "Tap: add 1 mana.",
-			"toughness": 1,
-			"type": "land",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/goblin_scout.png",
-			"color": "#c7b36b",
-			"cost": 1,
-			"faction": "warband",
-			"flavor": "",
-			"id": "goblin_scout",
-			"keywords": [
-				"Haste"
-			],
-			"name": "Goblin Scout",
-			"power": 1,
-			"set": "core",
-			"text": "Haste",
-			"toughness": 1,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/village_militia.png",
-			"color": "#c7b36b",
-			"cost": 1,
-			"faction": "holy",
-			"flavor": "",
-			"id": "village_militia",
-			"keywords": [],
-			"name": "Village Militia",
-			"power": 1,
-			"set": "core",
-			"text": "",
-			"toughness": 2,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/forest_wolf.png",
-			"color": "#c7b36b",
-			"cost": 2,
-			"faction": "wilds",
-			"flavor": "",
-			"id": "forest_wolf",
-			"keywords": [],
-			"name": "Forest Wolf",
-			"power": 2,
-			"set": "core",
-			"text": "",
-			"toughness": 2,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/swift_falcon.png",
-			"color": "#6685c7",
-			"cost": 2,
-			"faction": "wilds",
-			"flavor": "",
-			"id": "swift_falcon",
-			"keywords": [
-				"Flying"
-			],
-			"name": "Swift Falcon",
-			"power": 2,
-			"set": "core",
-			"text": "Flying",
-			"toughness": 1,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/sneaky_rogue.png",
-			"color": "#6685c7",
-			"cost": 2,
-			"faction": "warband",
-			"flavor": "",
-			"id": "sneaky_rogue",
-			"keywords": [
-				"Deathtouch"
-			],
-			"name": "Sneaky Rogue",
-			"power": 3,
-			"set": "core",
-			"text": "Deathtouch",
-			"toughness": 1,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/spear_picket.png",
-			"color": "#6685c7",
-			"cost": 2,
-			"faction": "wilds",
-			"flavor": "",
-			"id": "spear_picket",
-			"keywords": [
-				"Reach"
-			],
-			"name": "Spear Picket",
-			"power": 1,
-			"set": "core",
-			"text": "Reach",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/royal_knight.png",
-			"color": "#6685c7",
-			"cost": 3,
-			"faction": "holy",
-			"flavor": "",
-			"id": "royal_knight",
-			"keywords": [
-				"First Strike"
-			],
-			"name": "Royal Knight",
-			"power": 3,
-			"set": "core",
-			"text": "First Strike",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/giant_bear.png",
-			"color": "#6685c7",
-			"cost": 3,
-			"faction": "wilds",
-			"flavor": "",
-			"id": "giant_bear",
-			"keywords": [],
-			"name": "Giant Bear",
-			"power": 4,
-			"set": "core",
-			"text": "",
-			"toughness": 2,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/templar_healer.png",
-			"color": "#6685c7",
-			"cost": 3,
-			"faction": "holy",
-			"flavor": "",
-			"id": "templar_healer",
-			"keywords": [
-				"Lifelink"
-			],
-			"name": "Templar Healer",
-			"power": 2,
-			"set": "core",
-			"text": "Lifelink",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/thornwood_wall.png",
-			"color": "#618c4d",
-			"cost": 2,
-			"faction": "wilds",
-			"flavor": "",
-			"id": "thornwood_wall",
-			"keywords": [
-				"Defender",
-				"Reach"
-			],
-			"name": "Thornwood Wall",
-			"power": 0,
-			"set": "core",
-			"text": "Defender, Reach",
-			"toughness": 5,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/war_elephant.png",
-			"color": "#a85766",
-			"cost": 5,
-			"faction": "warband",
-			"flavor": "",
-			"id": "war_elephant",
-			"keywords": [
-				"Trample"
-			],
-			"name": "War Elephant",
-			"power": 5,
-			"set": "core",
-			"text": "Trample",
-			"toughness": 5,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/ancient_dragon.png",
-			"color": "#a85766",
-			"cost": 6,
-			"faction": "neutral",
-			"flavor": "",
-			"id": "ancient_dragon",
-			"keywords": [
-				"Flying"
-			],
-			"name": "Ancient Dragon",
-			"power": 6,
-			"set": "core",
-			"text": "Flying",
-			"toughness": 6,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "card_art/ember_tyrant.png",
-			"color": "#a85766",
-			"cost": 5,
-			"faction": "warband",
-			"flavor": "Born of the first fire, it has never known patience.",
-			"id": "ember_tyrant",
-			"keywords": [
-				"Trample",
-				"Haste"
-			],
-			"name": "Ember Tyrant",
-			"power": 6,
-			"set": "core",
-			"text": "Trample, Haste",
-			"toughness": 4,
-			"type": "creature",
-			"when_to_play": "A devastating top-end finisher. With haste it attacks the turn it lands; trample means chump-blockers barely slow it. Play it to close out the game."
-		},
-		{
-			"art": "card_art/seraph_of_dawn.png",
-			"color": "#6685c7",
-			"cost": 5,
-			"faction": "holy",
-			"flavor": "Her wings cast judgment in light; her gaze, mercy.",
-			"id": "seraph_of_dawn",
-			"keywords": [
-				"Flying",
-				"Lifelink",
-				"Vigilance"
-			],
-			"name": "Seraph of Dawn",
-			"power": 4,
-			"set": "core",
-			"text": "Flying, Lifelink, Vigilance",
-			"toughness": 6,
-			"type": "creature",
-			"when_to_play": "A defensive powerhouse: flying evasion, lifelink to climb out of burn range, and vigilance so she attacks and still blocks. Anchor your stable board around her."
-		},
-		{
-			"art": "card_art/elder_treant.png",
-			"color": "#618c4d",
-			"cost": 6,
-			"faction": "wilds",
-			"flavor": "Older than the kingdom whose banners rot at its roots.",
-			"id": "elder_treant",
-			"keywords": [
-				"Reach",
-				"Vigilance"
-			],
-			"name": "Elder Treant",
-			"power": 5,
-			"set": "core",
-			"text": "Reach, Vigilance",
-			"toughness": 8,
-			"type": "creature",
-			"when_to_play": "An immovable wall that also pressures: reach stops fliers, vigilance lets it swing without dropping its guard. Win the long grind behind it."
-		},
-		{
-			"art": "card_art/sun_cleric.png",
-			"color": "#e0cc6b",
-			"cost": 2,
-			"faction": "holy",
-			"flavor": "She tends the dawn-lamps, and the faithful never bleed out alone.",
-			"id": "sun_cleric",
-			"keywords": [
-				"Lifelink"
-			],
-			"name": "Sun-Cleric",
-			"power": 1,
-			"set": "solmarch",
-			"text": "Lifelink",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": "A cheap lifelink blocker that drains the foe and pads your life — good early defence."
-		},
-		{
-			"art": "card_art/sunless_tinker.png",
-			"color": "#e0cc6b",
-			"cost": 2,
-			"faction": "holy",
-			"flavor": "Below the city, behind a closed door, she changes the recipe — and tells no one.",
-			"id": "sunless_tinker",
-			"keywords": [],
-			"name": "Sunless Tinker",
-			"power": 2,
-			"set": "solmarch",
-			"text": "",
-			"toughness": 2,
-			"type": "creature",
-			"when_to_play": "A flexible 2-drop: the empire's quiet rebel. Trade up or chip in."
-		},
-		{
-			"art": "card_art/alabaster_sworn.png",
-			"color": "#e0cc6b",
-			"cost": 3,
-			"faction": "holy",
-			"flavor": "Her word is the only wall she is certain of.",
-			"id": "alabaster_sworn",
-			"keywords": [
-				"Vigilance"
-			],
-			"name": "Sworn of the Alabaster Spire",
-			"power": 3,
-			"set": "solmarch",
-			"text": "Vigilance",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": "Attacks and still blocks — a tireless 3-drop that holds the line while it presses."
-		},
-		{
-			"art": "card_art/marble_sentinel.png",
-			"color": "#e0cc6b",
-			"cost": 4,
-			"faction": "holy",
-			"flavor": "It has stood since before the empire forgot why it was raised.",
-			"id": "marble_sentinel",
-			"keywords": [
-				"Defender"
-			],
-			"name": "Marble Sentinel",
-			"power": 2,
-			"set": "solmarch",
-			"text": "Defender",
-			"toughness": 6,
-			"type": "creature",
-			"when_to_play": "A near-unkillable wall. Park it in front of their attackers and grind them out."
-		},
-		{
-			"art": "card_art/dawnward_colossus.png",
-			"color": "#e0cc6b",
-			"cost": 6,
-			"faction": "holy",
-			"flavor": "Marble given a soldier's oath; it will outlast everyone who kneels to it.",
-			"id": "dawnward_colossus",
-			"keywords": [
-				"Vigilance"
-			],
-			"name": "Dawnward Colossus",
-			"power": 5,
-			"set": "solmarch",
-			"text": "Vigilance",
-			"toughness": 7,
-			"type": "creature",
-			"when_to_play": "A huge top-end body that attacks and defends at once — anchors the late game."
-		},
-		{
-			"art": "card_art/ashreach_reaver.png",
-			"color": "#d66642",
-			"cost": 1,
-			"faction": "warband",
-			"flavor": "Live loud, die young, and call it a fair trade.",
-			"id": "ashreach_reaver",
-			"keywords": [
-				"Haste"
-			],
-			"name": "Ashreach Reaver",
-			"power": 2,
-			"set": "emberkin",
-			"text": "Haste",
-			"toughness": 1,
-			"type": "creature",
-			"when_to_play": "A 1-drop that hits the turn it lands — start the clock immediately."
-		},
-		{
-			"art": "card_art/kardum_duellist.png",
-			"color": "#d66642",
-			"cost": 2,
-			"faction": "warband",
-			"flavor": "A punch in the face is not the end of a friendship. Usually.",
-			"id": "kardum_duellist",
-			"keywords": [
-				"First Strike"
-			],
-			"name": "Kar'dûm Duellist",
-			"power": 2,
-			"set": "emberkin",
-			"text": "First Strike",
-			"toughness": 2,
-			"type": "creature",
-			"when_to_play": "First strike wins fights it shouldn't — a sticky early attacker and blocker."
-		},
-		{
-			"art": "card_art/pyre_singer.png",
-			"color": "#d66642",
-			"cost": 3,
-			"faction": "warband",
-			"flavor": "She drums the deeds of the fallen, and the fire leans in to listen.",
-			"id": "pyre_singer",
-			"keywords": [
-				"Haste"
-			],
-			"name": "Pyre-Singer",
-			"power": 3,
-			"set": "emberkin",
-			"text": "Haste",
-			"toughness": 2,
-			"type": "creature",
-			"when_to_play": "Immediate pressure; the warm heart of the warband — swing the turn she arrives."
-		},
-		{
-			"art": "card_art/bonfire_berserker.png",
-			"color": "#d66642",
-			"cost": 4,
-			"faction": "warband",
-			"flavor": "He doesn't feel the burns until morning.",
-			"id": "bonfire_berserker",
-			"keywords": [
-				"Trample",
-				"Haste"
-			],
-			"name": "Bonfire Berserker",
-			"power": 5,
-			"set": "emberkin",
-			"text": "Trample, Haste",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": "A reckless finisher: haste and trample mean chump-blocks barely slow the damage."
-		},
-		{
-			"art": "card_art/ashreach_warbeast.png",
-			"color": "#d66642",
-			"cost": 5,
-			"faction": "warband",
-			"flavor": "The waste breeds nothing gentle.",
-			"id": "ashreach_warbeast",
-			"keywords": [
-				"Trample",
-				"Haste"
-			],
-			"name": "Ashreach Warbeast",
-			"power": 6,
-			"set": "emberkin",
-			"text": "Trample, Haste",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": "Top-end haste-trample — drop it and end the game before it burns out."
-		},
-		{
-			"art": "card_art/tide_reader.png",
-			"color": "#668ccc",
-			"cost": 2,
-			"faction": "lattice",
-			"flavor": "She read this duel before you sat down.",
-			"id": "tide_reader",
-			"keywords": [
-				"Flying"
-			],
-			"name": "Tide-Reader",
-			"power": 1,
-			"set": "lattice",
-			"text": "Flying",
-			"toughness": 2,
-			"type": "creature",
-			"when_to_play": "An evasive early flyer that chips in and dodges ground blockers."
-		},
-		{
-			"art": "card_art/house_oddsmaker.png",
-			"color": "#668ccc",
-			"cost": 3,
-			"faction": "lattice",
-			"flavor": "She never gambles. The bet is for you; the math is for her.",
-			"id": "house_oddsmaker",
-			"keywords": [
-				"Vigilance"
-			],
-			"name": "House Oddsmaker",
-			"power": 2,
-			"set": "lattice",
-			"text": "Vigilance",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": "Attacks and blocks both — a patient body that always has an angle covered."
-		},
-		{
-			"art": "card_art/lattice_watcher.png",
-			"color": "#668ccc",
-			"cost": 3,
-			"faction": "lattice",
-			"flavor": "Nothing crosses the water unwatched.",
-			"id": "lattice_watcher",
-			"keywords": [
-				"Reach"
-			],
-			"name": "Lattice Watcher",
-			"power": 1,
-			"set": "lattice",
-			"text": "Reach",
-			"toughness": 4,
-			"type": "creature",
-			"when_to_play": "A cheap wall that also swats fliers — shores up the skies while you set up."
-		},
-		{
-			"art": "card_art/mirror_construct.png",
-			"color": "#668ccc",
-			"cost": 4,
-			"faction": "lattice",
-			"flavor": "Cut glass, given just enough mind to refract a debt into a blade.",
-			"id": "mirror_construct",
-			"keywords": [
-				"Flying"
-			],
-			"name": "Mirror Construct",
-			"power": 3,
-			"set": "lattice",
-			"text": "Flying",
-			"toughness": 3,
-			"type": "creature",
-			"when_to_play": "An evasive midrange beater — pressure they cannot easily block."
-		},
-		{
-			"art": "card_art/cartographer_endings.png",
-			"color": "#668ccc",
-			"cost": 5,
-			"faction": "lattice",
-			"flavor": "She has already read the transcript. She is only here to watch it come true.",
-			"id": "cartographer_endings",
-			"keywords": [
-				"Flying",
-				"Vigilance"
-			],
-			"name": "Cartographer of Endings",
-			"power": 4,
-			"set": "lattice",
-			"text": "Flying, Vigilance",
-			"toughness": 5,
-			"type": "creature",
-			"when_to_play": "A flying, vigilant flagship that dominates both halves of the board."
-		},
-		{
-			"art": "card_art/greenvale_strider.png",
-			"color": "#739959",
-			"cost": 2,
-			"faction": "wilds",
-			"flavor": "The wood closes behind her; she was never quite where you looked.",
-			"id": "greenvale_strider",
-			"keywords": [],
-			"name": "Greenvale Strider",
-			"power": 2,
-			"set": "greenwander",
-			"text": "",
-			"toughness": 2,
-			"type": "creature",
-			"when_to_play": "A solid 2-drop body to start a board the forest can build on."
-		},
-		{
-			"art": "card_art/grove_mother.png",
-			"color": "#739959",
-			"cost": 3,
-			"faction": "wilds",
-			"flavor": "She reads the year in the turn of the leaves, and remembers the dead by name.",
-			"id": "grove_mother",
-			"keywords": [
-				"Vigilance"
-			],
-			"name": "Grove-Mother",
-			"power": 2,
-			"set": "greenwander",
-			"text": "Vigilance",
-			"toughness": 4,
-			"type": "creature",
-			"when_to_play": "A sturdy, ever-ready blocker that also pokes in — the patient backbone."
-		},
-		{
-			"art": "card_art/antlered_guardian.png",
-			"color": "#739959",
-			"cost": 4,
-			"faction": "wilds",
-			"flavor": "It answers the Greening — and the call of anything that threatens the grove.",
-			"id": "antlered_guardian",
-			"keywords": [
-				"Reach"
-			],
-			"name": "Antlered Guardian",
-			"power": 4,
-			"set": "greenwander",
-			"text": "Reach",
-			"toughness": 4,
-			"type": "creature",
-			"when_to_play": "A clean midrange body that also grounds enemy fliers."
-		},
-		{
-			"art": "card_art/ancestor_oak.png",
-			"color": "#739959",
-			"cost": 5,
-			"faction": "wilds",
-			"flavor": "Your great-grandmother is an oak now. She still keeps watch.",
-			"id": "ancestor_oak",
-			"keywords": [
-				"Defender",
-				"Reach"
-			],
-			"name": "Ancestor-Oak",
-			"power": 3,
-			"set": "greenwander",
-			"text": "Defender, Reach",
-			"toughness": 7,
-			"type": "creature",
-			"when_to_play": "An enormous wall that stops fliers too — nearly impossible to break through."
-		},
-		{
-			"art": "card_art/thornwilde_behemoth.png",
-			"color": "#739959",
-			"cost": 6,
-			"faction": "wilds",
-			"flavor": "Grow or die, followed to its end: the wood itself, walking.",
-			"id": "thornwilde_behemoth",
-			"keywords": [
-				"Trample"
-			],
-			"name": "Thornwilde Behemoth",
-			"power": 7,
-			"set": "greenwander",
-			"text": "Trample",
-			"toughness": 6,
-			"type": "creature",
-			"when_to_play": "A massive trampler that ends games — the forest made monstrous."
-		},
-		{
-			"art": "card_art/new_card.png",
-			"color": "#8c73b3",
-			"cost": 3,
-			"faction": "neutral",
-			"flavor": "",
-			"id": "new_card",
-			"keywords": [],
-			"name": "New Card",
-			"power": 0,
-			"set": "core",
-			"text": "",
-			"toughness": 1,
-			"type": "creature",
-			"when_to_play": ""
-		},
-		{
-			"art": "",
-			"color": "#8c73b3",
-			"cost": 1,
-			"faction": "neutral",
-			"flavor": "Striker Sir is an ancient and powerful card. It currupts those who play it.",
-			"id": "striker_sir",
-			"keywords": [
-				"Haste",
-				"Lifelink"
-			],
-			"name": "Striker Sir",
-			"power": 6,
-			"set": "core",
-			"text": "Haste, Lifelink",
-			"toughness": 6,
-			"type": "creature",
-			"when_to_play": ""
-		}
-	]
+  "cards": [
+    {
+      "art": "card_art/wildland.png",
+      "color": "#618c4d",
+      "cost": 0,
+      "faction": "neutral",
+      "flavor": "",
+      "id": "wildland",
+      "keywords": [],
+      "name": "Wildland",
+      "power": 0,
+      "set": "core",
+      "text": "Tap: add 1 mana.",
+      "toughness": 1,
+      "type": "land",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/goblin_scout.png",
+      "color": "#c7b36b",
+      "cost": 1,
+      "faction": "warband",
+      "flavor": "",
+      "id": "goblin_scout",
+      "keywords": [
+        "Haste"
+      ],
+      "name": "Goblin Scout",
+      "power": 1,
+      "set": "core",
+      "text": "Haste",
+      "toughness": 1,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/village_militia.png",
+      "color": "#c7b36b",
+      "cost": 1,
+      "faction": "holy",
+      "flavor": "",
+      "id": "village_militia",
+      "keywords": [],
+      "name": "Village Militia",
+      "power": 1,
+      "set": "core",
+      "text": "",
+      "toughness": 2,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/forest_wolf.png",
+      "color": "#c7b36b",
+      "cost": 2,
+      "faction": "wilds",
+      "flavor": "",
+      "id": "forest_wolf",
+      "keywords": [],
+      "name": "Forest Wolf",
+      "power": 2,
+      "set": "core",
+      "text": "",
+      "toughness": 2,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/swift_falcon.png",
+      "color": "#6685c7",
+      "cost": 2,
+      "faction": "wilds",
+      "flavor": "",
+      "id": "swift_falcon",
+      "keywords": [
+        "Flying"
+      ],
+      "name": "Swift Falcon",
+      "power": 2,
+      "set": "core",
+      "text": "Flying",
+      "toughness": 1,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/sneaky_rogue.png",
+      "color": "#6685c7",
+      "cost": 2,
+      "faction": "warband",
+      "flavor": "",
+      "id": "sneaky_rogue",
+      "keywords": [
+        "Deathtouch"
+      ],
+      "name": "Sneaky Rogue",
+      "power": 3,
+      "set": "core",
+      "text": "Deathtouch",
+      "toughness": 1,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/spear_picket.png",
+      "color": "#6685c7",
+      "cost": 2,
+      "faction": "wilds",
+      "flavor": "",
+      "id": "spear_picket",
+      "keywords": [
+        "Reach"
+      ],
+      "name": "Spear Picket",
+      "power": 1,
+      "set": "core",
+      "text": "Reach",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/royal_knight.png",
+      "color": "#6685c7",
+      "cost": 3,
+      "faction": "holy",
+      "flavor": "",
+      "id": "royal_knight",
+      "keywords": [
+        "First Strike"
+      ],
+      "name": "Royal Knight",
+      "power": 3,
+      "set": "core",
+      "text": "First Strike",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/giant_bear.png",
+      "color": "#6685c7",
+      "cost": 3,
+      "faction": "wilds",
+      "flavor": "",
+      "id": "giant_bear",
+      "keywords": [],
+      "name": "Giant Bear",
+      "power": 4,
+      "set": "core",
+      "text": "",
+      "toughness": 2,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/templar_healer.png",
+      "color": "#6685c7",
+      "cost": 3,
+      "faction": "holy",
+      "flavor": "",
+      "id": "templar_healer",
+      "keywords": [
+        "Lifelink"
+      ],
+      "name": "Templar Healer",
+      "power": 2,
+      "set": "core",
+      "text": "Lifelink",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/thornwood_wall.png",
+      "color": "#618c4d",
+      "cost": 2,
+      "faction": "wilds",
+      "flavor": "",
+      "id": "thornwood_wall",
+      "keywords": [
+        "Defender",
+        "Reach"
+      ],
+      "name": "Thornwood Wall",
+      "power": 0,
+      "set": "core",
+      "text": "Defender, Reach",
+      "toughness": 5,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/war_elephant.png",
+      "color": "#a85766",
+      "cost": 5,
+      "faction": "warband",
+      "flavor": "",
+      "id": "war_elephant",
+      "keywords": [
+        "Trample"
+      ],
+      "name": "War Elephant",
+      "power": 5,
+      "set": "core",
+      "text": "Trample",
+      "toughness": 5,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/ancient_dragon.png",
+      "color": "#a85766",
+      "cost": 6,
+      "faction": "neutral",
+      "flavor": "",
+      "id": "ancient_dragon",
+      "keywords": [
+        "Flying"
+      ],
+      "name": "Ancient Dragon",
+      "power": 6,
+      "set": "core",
+      "text": "Flying",
+      "toughness": 6,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "card_art/ember_tyrant.png",
+      "color": "#a85766",
+      "cost": 5,
+      "faction": "warband",
+      "flavor": "Born of the first fire, it has never known patience.",
+      "id": "ember_tyrant",
+      "keywords": [
+        "Trample",
+        "Haste"
+      ],
+      "name": "Ember Tyrant",
+      "power": 6,
+      "set": "core",
+      "text": "Trample, Haste",
+      "toughness": 4,
+      "type": "creature",
+      "when_to_play": "A devastating top-end finisher. With haste it attacks the turn it lands; trample means chump-blockers barely slow it. Play it to close out the game."
+    },
+    {
+      "art": "card_art/seraph_of_dawn.png",
+      "color": "#6685c7",
+      "cost": 5,
+      "faction": "holy",
+      "flavor": "Her wings cast judgment in light; her gaze, mercy.",
+      "id": "seraph_of_dawn",
+      "keywords": [
+        "Flying",
+        "Lifelink",
+        "Vigilance"
+      ],
+      "name": "Seraph of Dawn",
+      "power": 4,
+      "set": "core",
+      "text": "Flying, Lifelink, Vigilance",
+      "toughness": 6,
+      "type": "creature",
+      "when_to_play": "A defensive powerhouse: flying evasion, lifelink to climb out of burn range, and vigilance so she attacks and still blocks. Anchor your stable board around her."
+    },
+    {
+      "art": "card_art/elder_treant.png",
+      "color": "#618c4d",
+      "cost": 6,
+      "faction": "wilds",
+      "flavor": "Older than the kingdom whose banners rot at its roots.",
+      "id": "elder_treant",
+      "keywords": [
+        "Reach",
+        "Vigilance"
+      ],
+      "name": "Elder Treant",
+      "power": 5,
+      "set": "core",
+      "text": "Reach, Vigilance",
+      "toughness": 8,
+      "type": "creature",
+      "when_to_play": "An immovable wall that also pressures: reach stops fliers, vigilance lets it swing without dropping its guard. Win the long grind behind it."
+    },
+    {
+      "art": "card_art/sun_cleric.png",
+      "color": "#e0cc6b",
+      "cost": 2,
+      "faction": "holy",
+      "flavor": "She tends the dawn-lamps, and the faithful never bleed out alone.",
+      "id": "sun_cleric",
+      "keywords": [
+        "Lifelink"
+      ],
+      "name": "Sun-Cleric",
+      "power": 1,
+      "set": "solmarch",
+      "text": "Lifelink",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": "A cheap lifelink blocker that drains the foe and pads your life — good early defence."
+    },
+    {
+      "art": "card_art/sunless_tinker.png",
+      "color": "#e0cc6b",
+      "cost": 2,
+      "faction": "holy",
+      "flavor": "Below the city, behind a closed door, she changes the recipe — and tells no one.",
+      "id": "sunless_tinker",
+      "keywords": [],
+      "name": "Sunless Tinker",
+      "power": 2,
+      "set": "solmarch",
+      "text": "",
+      "toughness": 2,
+      "type": "creature",
+      "when_to_play": "A flexible 2-drop: the empire's quiet rebel. Trade up or chip in."
+    },
+    {
+      "art": "card_art/alabaster_sworn.png",
+      "color": "#e0cc6b",
+      "cost": 3,
+      "faction": "holy",
+      "flavor": "Her word is the only wall she is certain of.",
+      "id": "alabaster_sworn",
+      "keywords": [
+        "Vigilance"
+      ],
+      "name": "Sworn of the Alabaster Spire",
+      "power": 3,
+      "set": "solmarch",
+      "text": "Vigilance",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": "Attacks and still blocks — a tireless 3-drop that holds the line while it presses."
+    },
+    {
+      "art": "card_art/marble_sentinel.png",
+      "color": "#e0cc6b",
+      "cost": 4,
+      "faction": "holy",
+      "flavor": "It has stood since before the empire forgot why it was raised.",
+      "id": "marble_sentinel",
+      "keywords": [
+        "Defender"
+      ],
+      "name": "Marble Sentinel",
+      "power": 2,
+      "set": "solmarch",
+      "text": "Defender",
+      "toughness": 6,
+      "type": "creature",
+      "when_to_play": "A near-unkillable wall. Park it in front of their attackers and grind them out."
+    },
+    {
+      "art": "card_art/dawnward_colossus.png",
+      "color": "#e0cc6b",
+      "cost": 6,
+      "faction": "holy",
+      "flavor": "Marble given a soldier's oath; it will outlast everyone who kneels to it.",
+      "id": "dawnward_colossus",
+      "keywords": [
+        "Vigilance"
+      ],
+      "name": "Dawnward Colossus",
+      "power": 5,
+      "set": "solmarch",
+      "text": "Vigilance",
+      "toughness": 7,
+      "type": "creature",
+      "when_to_play": "A huge top-end body that attacks and defends at once — anchors the late game."
+    },
+    {
+      "art": "card_art/ashreach_reaver.png",
+      "color": "#d66642",
+      "cost": 1,
+      "faction": "warband",
+      "flavor": "Live loud, die young, and call it a fair trade.",
+      "id": "ashreach_reaver",
+      "keywords": [
+        "Haste"
+      ],
+      "name": "Ashreach Reaver",
+      "power": 2,
+      "set": "emberkin",
+      "text": "Haste",
+      "toughness": 1,
+      "type": "creature",
+      "when_to_play": "A 1-drop that hits the turn it lands — start the clock immediately."
+    },
+    {
+      "art": "card_art/kardum_duellist.png",
+      "color": "#d66642",
+      "cost": 2,
+      "faction": "warband",
+      "flavor": "A punch in the face is not the end of a friendship. Usually.",
+      "id": "kardum_duellist",
+      "keywords": [
+        "First Strike"
+      ],
+      "name": "Kar'dûm Duellist",
+      "power": 2,
+      "set": "emberkin",
+      "text": "First Strike",
+      "toughness": 2,
+      "type": "creature",
+      "when_to_play": "First strike wins fights it shouldn't — a sticky early attacker and blocker."
+    },
+    {
+      "art": "card_art/pyre_singer.png",
+      "color": "#d66642",
+      "cost": 3,
+      "faction": "warband",
+      "flavor": "She drums the deeds of the fallen, and the fire leans in to listen.",
+      "id": "pyre_singer",
+      "keywords": [
+        "Haste"
+      ],
+      "name": "Pyre-Singer",
+      "power": 3,
+      "set": "emberkin",
+      "text": "Haste",
+      "toughness": 2,
+      "type": "creature",
+      "when_to_play": "Immediate pressure; the warm heart of the warband — swing the turn she arrives."
+    },
+    {
+      "art": "card_art/bonfire_berserker.png",
+      "color": "#d66642",
+      "cost": 4,
+      "faction": "warband",
+      "flavor": "He doesn't feel the burns until morning.",
+      "id": "bonfire_berserker",
+      "keywords": [
+        "Trample",
+        "Haste"
+      ],
+      "name": "Bonfire Berserker",
+      "power": 5,
+      "set": "emberkin",
+      "text": "Trample, Haste",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": "A reckless finisher: haste and trample mean chump-blocks barely slow the damage."
+    },
+    {
+      "art": "card_art/ashreach_warbeast.png",
+      "color": "#d66642",
+      "cost": 5,
+      "faction": "warband",
+      "flavor": "The waste breeds nothing gentle.",
+      "id": "ashreach_warbeast",
+      "keywords": [
+        "Trample",
+        "Haste"
+      ],
+      "name": "Ashreach Warbeast",
+      "power": 6,
+      "set": "emberkin",
+      "text": "Trample, Haste",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": "Top-end haste-trample — drop it and end the game before it burns out."
+    },
+    {
+      "art": "card_art/tide_reader.png",
+      "color": "#668ccc",
+      "cost": 2,
+      "faction": "lattice",
+      "flavor": "She read this duel before you sat down.",
+      "id": "tide_reader",
+      "keywords": [
+        "Flying"
+      ],
+      "name": "Tide-Reader",
+      "power": 1,
+      "set": "lattice",
+      "text": "Flying",
+      "toughness": 2,
+      "type": "creature",
+      "when_to_play": "An evasive early flyer that chips in and dodges ground blockers."
+    },
+    {
+      "art": "card_art/house_oddsmaker.png",
+      "color": "#668ccc",
+      "cost": 3,
+      "faction": "lattice",
+      "flavor": "She never gambles. The bet is for you; the math is for her.",
+      "id": "house_oddsmaker",
+      "keywords": [
+        "Vigilance"
+      ],
+      "name": "House Oddsmaker",
+      "power": 2,
+      "set": "lattice",
+      "text": "Vigilance",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": "Attacks and blocks both — a patient body that always has an angle covered."
+    },
+    {
+      "art": "card_art/lattice_watcher.png",
+      "color": "#668ccc",
+      "cost": 3,
+      "faction": "lattice",
+      "flavor": "Nothing crosses the water unwatched.",
+      "id": "lattice_watcher",
+      "keywords": [
+        "Reach"
+      ],
+      "name": "Lattice Watcher",
+      "power": 1,
+      "set": "lattice",
+      "text": "Reach",
+      "toughness": 4,
+      "type": "creature",
+      "when_to_play": "A cheap wall that also swats fliers — shores up the skies while you set up."
+    },
+    {
+      "art": "card_art/mirror_construct.png",
+      "color": "#668ccc",
+      "cost": 4,
+      "faction": "lattice",
+      "flavor": "Cut glass, given just enough mind to refract a debt into a blade.",
+      "id": "mirror_construct",
+      "keywords": [
+        "Flying"
+      ],
+      "name": "Mirror Construct",
+      "power": 3,
+      "set": "lattice",
+      "text": "Flying",
+      "toughness": 3,
+      "type": "creature",
+      "when_to_play": "An evasive midrange beater — pressure they cannot easily block."
+    },
+    {
+      "art": "card_art/cartographer_endings.png",
+      "color": "#668ccc",
+      "cost": 5,
+      "faction": "lattice",
+      "flavor": "She has already read the transcript. She is only here to watch it come true.",
+      "id": "cartographer_endings",
+      "keywords": [
+        "Flying",
+        "Vigilance"
+      ],
+      "name": "Cartographer of Endings",
+      "power": 4,
+      "set": "lattice",
+      "text": "Flying, Vigilance",
+      "toughness": 5,
+      "type": "creature",
+      "when_to_play": "A flying, vigilant flagship that dominates both halves of the board."
+    },
+    {
+      "art": "card_art/greenvale_strider.png",
+      "color": "#739959",
+      "cost": 2,
+      "faction": "wilds",
+      "flavor": "The wood closes behind her; she was never quite where you looked.",
+      "id": "greenvale_strider",
+      "keywords": [],
+      "name": "Greenvale Strider",
+      "power": 2,
+      "set": "greenwander",
+      "text": "",
+      "toughness": 2,
+      "type": "creature",
+      "when_to_play": "A solid 2-drop body to start a board the forest can build on."
+    },
+    {
+      "art": "card_art/grove_mother.png",
+      "color": "#739959",
+      "cost": 3,
+      "faction": "wilds",
+      "flavor": "She reads the year in the turn of the leaves, and remembers the dead by name.",
+      "id": "grove_mother",
+      "keywords": [
+        "Vigilance"
+      ],
+      "name": "Grove-Mother",
+      "power": 2,
+      "set": "greenwander",
+      "text": "Vigilance",
+      "toughness": 4,
+      "type": "creature",
+      "when_to_play": "A sturdy, ever-ready blocker that also pokes in — the patient backbone."
+    },
+    {
+      "art": "card_art/antlered_guardian.png",
+      "color": "#739959",
+      "cost": 4,
+      "faction": "wilds",
+      "flavor": "It answers the Greening — and the call of anything that threatens the grove.",
+      "id": "antlered_guardian",
+      "keywords": [
+        "Reach"
+      ],
+      "name": "Antlered Guardian",
+      "power": 4,
+      "set": "greenwander",
+      "text": "Reach",
+      "toughness": 4,
+      "type": "creature",
+      "when_to_play": "A clean midrange body that also grounds enemy fliers."
+    },
+    {
+      "art": "card_art/ancestor_oak.png",
+      "color": "#739959",
+      "cost": 5,
+      "faction": "wilds",
+      "flavor": "Your great-grandmother is an oak now. She still keeps watch.",
+      "id": "ancestor_oak",
+      "keywords": [
+        "Defender",
+        "Reach"
+      ],
+      "name": "Ancestor-Oak",
+      "power": 3,
+      "set": "greenwander",
+      "text": "Defender, Reach",
+      "toughness": 7,
+      "type": "creature",
+      "when_to_play": "An enormous wall that stops fliers too — nearly impossible to break through."
+    },
+    {
+      "art": "card_art/thornwilde_behemoth.png",
+      "color": "#739959",
+      "cost": 6,
+      "faction": "wilds",
+      "flavor": "Grow or die, followed to its end: the wood itself, walking.",
+      "id": "thornwilde_behemoth",
+      "keywords": [
+        "Trample"
+      ],
+      "name": "Thornwilde Behemoth",
+      "power": 7,
+      "set": "greenwander",
+      "text": "Trample",
+      "toughness": 6,
+      "type": "creature",
+      "when_to_play": "A massive trampler that ends games — the forest made monstrous."
+    },
+    {
+      "art": "card_art/new_card.png",
+      "color": "#8c73b3",
+      "cost": 3,
+      "faction": "neutral",
+      "flavor": "",
+      "id": "new_card",
+      "keywords": [],
+      "name": "New Card",
+      "power": 0,
+      "set": "core",
+      "text": "",
+      "toughness": 1,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "art": "",
+      "color": "#8c73b3",
+      "cost": 1,
+      "faction": "neutral",
+      "flavor": "Striker Sir is an ancient and powerful card. It currupts those who play it.",
+      "id": "striker_sir",
+      "keywords": [
+        "Haste",
+        "Lifelink"
+      ],
+      "name": "Striker Sir",
+      "power": 6,
+      "set": "core",
+      "text": "Haste, Lifelink",
+      "toughness": 6,
+      "type": "creature",
+      "when_to_play": ""
+    },
+    {
+      "id": "ember_bolt",
+      "name": "Ember Bolt",
+      "type": "spell",
+      "cost": 2,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Deal 3 damage to a creature or the enemy.",
+      "flavor": "",
+      "color": "#c0392b",
+      "art": "card_art/pyre_singer.png",
+      "faction": "warband",
+      "set": "core",
+      "when_to_play": "",
+      "effect": {
+        "kind": "damage",
+        "amount": 3
+      }
+    },
+    {
+      "id": "thorn_lash",
+      "name": "Thorn Lash",
+      "type": "spell",
+      "cost": 1,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Deal 2 damage to a creature or the enemy.",
+      "flavor": "",
+      "color": "#6aa84f",
+      "art": "card_art/greenvale_strider.png",
+      "faction": "wilds",
+      "set": "core",
+      "when_to_play": "",
+      "effect": {
+        "kind": "damage",
+        "amount": 2
+      }
+    },
+    {
+      "id": "searing_dawn",
+      "name": "Searing Dawn",
+      "type": "spell",
+      "cost": 3,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Deal 4 damage to a creature or the enemy.",
+      "flavor": "",
+      "color": "#d4af37",
+      "art": "card_art/sun_cleric.png",
+      "faction": "holy",
+      "set": "core",
+      "when_to_play": "",
+      "effect": {
+        "kind": "damage",
+        "amount": 4
+      }
+    },
+    {
+      "id": "farsight",
+      "name": "Farsight",
+      "type": "spell",
+      "cost": 2,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Draw 2 cards.",
+      "flavor": "",
+      "color": "#4a78c8",
+      "art": "card_art/tide_reader.png",
+      "faction": "lattice",
+      "set": "core",
+      "when_to_play": "",
+      "effect": {
+        "kind": "draw",
+        "amount": 2
+      }
+    },
+    {
+      "id": "quick_study",
+      "name": "Quick Study",
+      "type": "spell",
+      "cost": 1,
+      "power": 0,
+      "toughness": 0,
+      "keywords": [],
+      "text": "Draw a card.",
+      "flavor": "",
+      "color": "#8c73b3",
+      "art": "card_art/house_oddsmaker.png",
+      "faction": "neutral",
+      "set": "core",
+      "when_to_play": "",
+      "effect": {
+        "kind": "draw",
+        "amount": 1
+      }
+    }
+  ]
 }
