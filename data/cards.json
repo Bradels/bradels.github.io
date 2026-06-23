@@ -1109,6 +1109,107 @@
       "faction": "wilds",
       "set": "core",
       "when_to_play": "A flexible midrange body that grounds fliers and pushes damage."
+    },
+    {
+      "id": "verdant_sprout",
+      "name": "Verdant Sprout",
+      "type": "creature",
+      "cost": 2,
+      "power": 1,
+      "toughness": 1,
+      "keywords": [],
+      "text": "Landfall — whenever a land enters under your control, this gets +1/+1.",
+      "flavor": "It drinks deep from every new-turned field.",
+      "color": "#739959",
+      "art": "card_art/verdant_sprout.png",
+      "faction": "wilds",
+      "set": "core",
+      "when_to_play": "Drop it early; each land you play makes it bigger.",
+      "triggers": [
+        {
+          "on": "landfall",
+          "effect": {
+            "kind": "buff",
+            "power": 1,
+            "toughness": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ember_skirmisher",
+      "name": "Ember Skirmisher",
+      "type": "creature",
+      "cost": 2,
+      "power": 2,
+      "toughness": 1,
+      "keywords": [],
+      "text": "Whenever a creature you control attacks, deal 1 damage to the enemy.",
+      "flavor": "First over the wall, every time.",
+      "color": "#d66642",
+      "art": "card_art/ember_skirmisher.png",
+      "faction": "warband",
+      "set": "core",
+      "when_to_play": "Go wide — every attacker pings their life total.",
+      "triggers": [
+        {
+          "on": "attack",
+          "effect": {
+            "kind": "damage",
+            "amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "tide_scholar",
+      "name": "Tide Scholar",
+      "type": "creature",
+      "cost": 3,
+      "power": 1,
+      "toughness": 3,
+      "keywords": [],
+      "text": "When this dies, draw a card.",
+      "flavor": "Her last lesson is always the deepest.",
+      "color": "#668ccc",
+      "art": "card_art/tide_scholar.png",
+      "faction": "lattice",
+      "set": "core",
+      "when_to_play": "A patient blocker that replaces itself when it falls.",
+      "triggers": [
+        {
+          "on": "dies",
+          "effect": {
+            "kind": "draw",
+            "amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "dawn_acolyte",
+      "name": "Dawn Acolyte",
+      "type": "creature",
+      "cost": 2,
+      "power": 1,
+      "toughness": 2,
+      "keywords": [],
+      "text": "Whenever a creature you control attacks, you gain 1 life.",
+      "flavor": "Each charge is a small prayer answered.",
+      "color": "#d4af37",
+      "art": "card_art/dawn_acolyte.png",
+      "faction": "holy",
+      "set": "core",
+      "when_to_play": "Attack into the lifegain to win the long game.",
+      "triggers": [
+        {
+          "on": "attack",
+          "effect": {
+            "kind": "heal",
+            "amount": 1
+          }
+        }
+      ]
     }
   ]
 }
