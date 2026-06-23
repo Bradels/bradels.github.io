@@ -1,0 +1,114 @@
+{
+	"upgrades": [
+		{
+			"category": "balanced",
+			"dc": 1,
+			"desc": "+1 / +1, but costs 1 more",
+			"dp": 1,
+			"dt": 1,
+			"id": "might",
+			"keyword": "",
+			"label": "Might"
+		},
+		{
+			"category": "balanced",
+			"dc": 1,
+			"desc": "+2 / +1, but costs 1 more",
+			"dp": 2,
+			"dt": 1,
+			"id": "brutality",
+			"keyword": "",
+			"label": "Brutality"
+		},
+		{
+			"category": "balanced",
+			"dc": 1,
+			"desc": "+0 / +3, but costs 1 more",
+			"dp": 0,
+			"dt": 3,
+			"id": "bulwark",
+			"keyword": "",
+			"label": "Bulwark"
+		},
+		{
+			"category": "balanced",
+			"dc": 1,
+			"desc": "Gains Trample and +1 power, but costs 1 more",
+			"dp": 1,
+			"dt": 0,
+			"id": "warcry",
+			"keyword": "trample",
+			"label": "Warcry"
+		},
+		{
+			"category": "downside",
+			"dc": -1,
+			"desc": "+2 / −2, and costs 1 less",
+			"dp": 2,
+			"dt": -2,
+			"id": "reckless",
+			"keyword": "",
+			"label": "Reckless"
+		},
+		{
+			"category": "downside",
+			"dc": -1,
+			"desc": "−1 / −1, but costs 1 less",
+			"dp": -1,
+			"dt": -1,
+			"id": "featherweight",
+			"keyword": "",
+			"label": "Featherweight"
+		},
+		{
+			"category": "downside",
+			"dc": -1,
+			"desc": "Gains Haste but −1 toughness, and costs 1 less",
+			"dp": 0,
+			"dt": -1,
+			"id": "berserker",
+			"keyword": "haste",
+			"label": "Berserker"
+		},
+		{
+			"category": "rare",
+			"dc": 0,
+			"desc": "+2 / +2 at no extra cost",
+			"dp": 2,
+			"dt": 2,
+			"id": "ascendant",
+			"keyword": "",
+			"label": "Ascendant"
+		},
+		{
+			"category": "rare",
+			"dc": 0,
+			"desc": "Gains Flying at no extra cost",
+			"dp": 0,
+			"dt": 0,
+			"id": "take_wing",
+			"keyword": "flying",
+			"label": "Take Wing"
+		},
+		{
+			"category": "rare",
+			"dc": 0,
+			"desc": "Gains Lifelink at no extra cost",
+			"dp": 0,
+			"dt": 0,
+			"id": "bloodbond",
+			"keyword": "lifelink",
+			"label": "Bloodbond"
+		},
+		{
+			"category": "rare",
+			"dc": 0,
+			"desc": "Gains First Strike at no extra cost",
+			"dp": 0,
+			"dt": 0,
+			"id": "riposte",
+			"keyword": "first_strike",
+			"label": "Riposte"
+		}
+	]
+}

@@ -1,0 +1,274 @@
+{
+	"data": {
+		"aurelle": {
+			"attack": [
+				"For the line — advance.",
+				"Now we answer, and decisively."
+			],
+			"big": [
+				"By dawn's light — the Colossus answers!",
+				"Behold what the oath protects."
+			],
+			"cast": [
+				"Take your post.",
+				"Another sworn to the line.",
+				"Stand fast beside me."
+			],
+			"hold": [
+				"I hold the wall. Come to me.",
+				"Patience. Let them break upon us."
+			],
+			"opening": {
+				"ahead": [
+					"The line holds, as it must.",
+					"Order prevails — as I swore it would."
+				],
+				"behind": [
+					"You press me hard — I respect it.",
+					"The wall is dented, not broken. I stand."
+				],
+				"even": [
+					"A worthy contest. Let's conduct it with honor.",
+					"Evenly matched. Good. Test my wall."
+				]
+			},
+			"react": [
+				"The line holds.",
+				"An honorable exchange.",
+				"We endure."
+			],
+			"taunt_reply": [
+				"Spoken boldly. Now prove it against the wall.",
+				"I've heard finer threats from braver foes. Come."
+			],
+			"tip": [
+				"Find the way THROUGH my wall — don't just batter it.",
+				"Weather the storm; resilience wins this.",
+				"Pick your moment, then strike with everything."
+			]
+		},
+		"gronk": {
+			"attack": [
+				"CHARGE! Burn it ALL!",
+				"SMASH! No survivors!"
+			],
+			"big": [
+				"THE EMBER TYRANT WAKES! BOW!",
+				"Now you BURN! Hahaha!"
+			],
+			"cast": [
+				"More for the bonfire!",
+				"SMASH with this one!",
+				"Gronk make more big things!"
+			],
+			"hold": [
+				"Grr... Gronk wait. Gronk HATE waiting.",
+				"Build the fire... then BURN."
+			],
+			"opening": {
+				"ahead": [
+					"BURN THEM DOWN! Hahaha!",
+					"Feel my FURY, little spark!"
+				],
+				"behind": [
+					"WHAT?! You DARE?!",
+					"Gronk not done! Gronk NEVER done!"
+				],
+				"even": [
+					"You still standing? Not for long!",
+					"Grraah! Gronk smash you to ash yet!"
+				]
+			},
+			"react": [
+				"RAAGH! Good smash!",
+				"Hah! Puny!",
+				"Gronk felt nothing! ...maybe little."
+			],
+			"taunt_reply": [
+				"RAAGH! Talk make Gronk ANGRY! Good!",
+				"Gronk crush mouthy ones FIRST!"
+			],
+			"tip": []
+		},
+		"kestra": {
+			"attack": [
+				"Swing for the fences!",
+				"Attack! No mercy, all heart!"
+			],
+			"big": [
+				"NOW we bring the big iron!",
+				"Ashreach — burn it down!"
+			],
+			"cast": [
+				"Get in here!",
+				"Another one, swinging!",
+				"More fire on the field!"
+			],
+			"hold": [
+				"Ehh, I'll wait ONE turn. Don't get used to it.",
+				"Loading up. Next turn? Boom."
+			],
+			"opening": {
+				"ahead": [
+					"HA! Now we're cooking!",
+					"Feel that? That's momentum!"
+				],
+				"behind": [
+					"Oh, you've got TEETH! Good!",
+					"Down a step? Just makes the comeback sweeter!"
+				],
+				"even": [
+					"Neck and neck — I LOVE it!",
+					"Come on, hit me back — harder!"
+				]
+			},
+			"react": [
+				"HA! What a hit!",
+				"Ooh — felt that one!",
+				"Worth it! Trade up!"
+			],
+			"taunt_reply": [
+				"Ha! Talk's cheap — swing at me!",
+				"That's the spirit! Now back it up!"
+			],
+			"tip": [
+				"Come out swinging — don't sit back!",
+				"Trade up: lose the small one, take the big one.",
+				"End it quick. Hesitation loses duels."
+			]
+		},
+		"liora": {
+			"attack": [
+				"Now the lines converge.",
+				"I move, and the board tilts."
+			],
+			"big": [
+				"The cartography is complete.",
+				"I mapped this ending some turns ago. Behold it."
+			],
+			"cast": [
+				"A piece, placed precisely.",
+				"This answers a question you haven't asked yet.",
+				"Onto the lattice it goes."
+			],
+			"hold": [
+				"I'll hold. Information outvalues tempo.",
+				"Patience. The right moment is forming."
+			],
+			"opening": {
+				"ahead": [
+					"Just as I foresaw.",
+					"The pattern holds. I'm exactly where I meant to be."
+				],
+				"behind": [
+					"An unexpected branch. Noted.",
+					"You read the board well — the odds shift. Interesting."
+				],
+				"even": [
+					"Balanced. I do enjoy a clean problem.",
+					"Every line still open. Let's reason it out."
+				]
+			},
+			"react": [
+				"Predicted.",
+				"A reasonable exchange.",
+				"Data, nothing more."
+			],
+			"taunt_reply": [
+				"Bravado is rarely predictive. I've accounted for it.",
+				"Said the variable, just before I solved for it."
+			],
+			"tip": [
+				"Read the whole board before you commit.",
+				"A wrong move is only information — take your time.",
+				"Hold an answer back; don't spend everything at once."
+			]
+		},
+		"wylda": {
+			"attack": [
+				"Bramble, with me — press them.",
+				"The grove advances."
+			],
+			"big": [
+				"From the deep wood — RISE.",
+				"Now the wood wakes all at once."
+			],
+			"cast": [
+				"Up from the undergrowth, you.",
+				"Grow now, little one.",
+				"The greenwander sends another."
+			],
+			"hold": [
+				"I'll wait. The wilds are patient.",
+				"Not yet. Let it grow."
+			],
+			"opening": {
+				"ahead": [
+					"The wood has woken, and it stands with me now.",
+					"Patience pays — see how the grove stands tall?"
+				],
+				"behind": [
+					"You came out swinging — good. The wilds bend, but they don't break.",
+					"Pressed early? The forest remembers every storm."
+				],
+				"even": [
+					"Slow and steady. Let's see whose roots run deeper.",
+					"Bramble's ears are up. This one's finely poised."
+				]
+			},
+			"react": [
+				"The wood endures.",
+				"Mm. A fair trade.",
+				"Bramble felt that one."
+			],
+			"taunt_reply": [
+				"Big words. The wood's heard louder, and it's still here.",
+				"Ha — save your breath for the long game."
+			],
+			"tip": [
+				"Hit me early — before my wood wakes up.",
+				"Trade up when you can; don't waste your small ones.",
+				"I'm patient, so make me pay for it. Pressure me now."
+			]
+		}
+	},
+	"generic": {
+		"attack": [
+			"Press the attack!",
+			"Forward!"
+		],
+		"big": [
+			"Now, my finest — rise!",
+			"Witness this."
+		],
+		"cast": [
+			"I bring another to the field.",
+			"Take your place.",
+			"One more for the fight."
+		],
+		"hold": [
+			"I'll wait.",
+			"Not yet."
+		],
+		"opening": {
+			"ahead": [
+				"The advantage is mine.",
+				"This goes as I'd hoped."
+			],
+			"behind": [
+				"You fight well. I'll not yield.",
+				"Pressed, but still standing."
+			],
+			"even": [
+				"A close contest. Let's see it through.",
+				"Finely balanced — every move counts."
+			]
+		},
+		"react": [
+			"A fair trade.",
+			"So it goes.",
+			"Noted."
+		],
+		"tip": []
+	}
+}

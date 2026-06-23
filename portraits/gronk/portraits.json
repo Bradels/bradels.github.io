@@ -1,0 +1,10 @@
+{
+  "char": "gronk",
+  "emotions": [
+    "neutral",
+    "happy",
+    "angry",
+    "sad",
+    "surprised"
+  ]
+}

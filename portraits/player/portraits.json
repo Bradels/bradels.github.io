@@ -1,0 +1,10 @@
+{
+  "char": "player",
+  "emotions": [
+    "neutral",
+    "happy",
+    "angry",
+    "sad",
+    "surprised"
+  ]
+}

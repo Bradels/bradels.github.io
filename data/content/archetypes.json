@@ -1,0 +1,56 @@
+{
+	"archetypes": [
+		{
+			"base": {
+				"forest_wolf": 3,
+				"giant_bear": 3,
+				"goblin_scout": 4,
+				"sneaky_rogue": 2,
+				"war_elephant": 2
+			},
+			"blurb": "Cheap, fast creatures that race the opponent's life total.",
+			"id": "aggro",
+			"lands": 16,
+			"name": "Aggro — Burn it Down"
+		},
+		{
+			"base": {
+				"ancient_dragon": 2,
+				"spear_picket": 2,
+				"swift_falcon": 2,
+				"templar_healer": 3,
+				"village_militia": 3
+			},
+			"blurb": "Evasive fliers and lifegain behind a defensive shell.",
+			"id": "control",
+			"lands": 18,
+			"name": "Control — Wings & Walls"
+		},
+		{
+			"base": {
+				"giant_bear": 3,
+				"royal_knight": 3,
+				"swift_falcon": 2,
+				"village_militia": 2,
+				"war_elephant": 2
+			},
+			"blurb": "Efficient, well-statted creatures that win the long fights.",
+			"id": "midrange",
+			"lands": 17,
+			"name": "Midrange — Steel & Honor"
+		},
+		{
+			"base": {
+				"ancient_dragon": 2,
+				"forest_wolf": 2,
+				"giant_bear": 2,
+				"thornwood_wall": 3,
+				"war_elephant": 2
+			},
+			"blurb": "Stall behind walls, then crush with oversized threats.",
+			"id": "ramp",
+			"lands": 18,
+			"name": "Ramp — Roots & Giants"
+		}
+	]
+}
