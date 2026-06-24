@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Keyword icon sprite. Referenced as <use href="/keyword-icons.svg#kw-<slug>"/>.
+    All symbols share a centered viewBox so a single CSS size controls them, and
+    every shape uses fill="currentColor" so the icon inherits the surrounding text
+    colour (card frame cream / chip brown / etc.).
+
+    reach/first_strike/deathtouch/lifelink/defender are Kenney "Board Game Icons"
+    (CC0) silhouettes, recoloured. flying/trample/haste/vigilance are authored to
+    match (Kenney's packs have no wing/boot/bolt/eye).
+  -->
+
+  <!-- reach = bow (Kenney) -->
+  <symbol id="kw-reach" viewBox="-32 -32 64 64">
+    <path fill="currentColor" d="M21.9 -11.2 L15.95 -8.2 Q21.75 0.7 21 16.25 20.9 18.3 19.4 19.7 17.85 21.1 15.75 21 13.7 20.9 12.3 19.4 11.55 18.55 11.25 17.6 L-5 12.15 -5 15 Q-5 15.85 -5.55 16.45 L-13.55 24.45 Q-14.15 25 -15 25 -15.85 25 -16.4 24.45 -17 23.85 -17 23 L-17 17 -23 17 Q-23.85 17 -24.4 16.45 -25 15.85 -25 15 -25 14.15 -24.4 13.6 L-16.4 5.6 Q-15.85 5 -15 5 L-12.15 5 -17.55 -11.2 Q-18.5 -11.55 -19.3 -12.25 -20.85 -13.6 -21 -15.65 -21.15 -17.75 -19.75 -19.3 -18.4 -20.85 -16.3 -21 -0.75 -21.95 8.25 -16 L11.2 -21.9 Q11.45 -22.4 11.95 -22.7 L13 -23 21 -23 Q21.85 -23 22.45 -22.4 23 -21.85 23 -21 L23 -13 22.7 -11.95 21.9 -11.2 M-0.5 7.35 L11.05 11.2 Q10.7 3.7 8.15 -1.3 L-0.5 7.35 M-7.35 0.5 L1.4 -8.2 Q-3.65 -10.9 -11.2 -11.1 L-7.35 0.5"/>
+  </symbol>
+
+  <!-- defender = shield (Kenney) -->
+  <symbol id="kw-defender" viewBox="-32 -32 64 64">
+    <path fill="currentColor" d="M22.3 -19.55 Q24.4 -19.35 25.75 -17.75 27.15 -16.2 27 -14.1 26.25 4.45 16.3 16.8 10.2 24.3 2.35 28.05 L0.1 28.5 -2.15 28.05 Q-10.1 24.3 -16.2 16.8 -26.15 4.45 -26.9 -14.1 -27 -16.2 -25.65 -17.75 -24.3 -19.35 -22.2 -19.55 -13.35 -20.4 -4.4 -27 -2.4 -28.4 0.1 -28.4 2.5 -28.4 4.5 -27 13.45 -20.45 22.3 -19.55"/>
+  </symbol>
+
+  <!-- deathtouch = skull (Kenney) -->
+  <symbol id="kw-deathtouch" viewBox="-32 -32 64 64">
+    <path fill="currentColor" d="M9 12 Q11.55 12 13.2 10.35 15 8.55 15 6 15 3.6 13.2 1.8 11.55 0 9 0 6.45 0 4.65 1.8 3 3.45 3 6 3 8.55 4.65 10.35 6.45 12 9 12 M-9 12 Q-6.45 12 -4.8 10.35 -3 8.55 -3 6 -3 3.6 -4.8 1.8 -6.45 0 -9 0 -11.55 0 -13.35 1.8 -15 3.45 -15 6 -15 8.55 -13.35 10.35 -11.55 12 -9 12 M0 -30 Q11.1 -30 19.05 -22.5 27 -15 27 -4.5 27 1.5 24 7.2 L24 12 Q24 14.55 22.2 16.35 20.55 18 18 18 L12 18 12 24 Q12 26.55 10.2 28.35 8.55 30 6 30 L-6 30 Q-8.55 30 -10.35 28.35 -12 26.55 -12 24 L-12 18 -18 18 Q-20.55 18 -22.35 16.35 -24 14.55 -24 12 L-24 7.2 Q-27 1.95 -27 -4.5 -27 -15 -19.05 -22.5 -11.25 -30 0 -30"/>
+  </symbol>
+
+  <!-- first_strike = sword (Kenney) -->
+  <symbol id="kw-first_strike" viewBox="-32 -32 64 64">
+    <path fill="currentColor" d="M13.5 -26.45 Q14.25 -27 15.25 -27 L24.4 -27 Q25.35 -27 26.05 -26.45 L26.25 -26.3 Q27 -25.5 27 -24.45 L27 -15.2 Q27 -14.25 26.25 -13.4 L2.2 10.65 4 12.45 4.3 12.1 Q4.45 11.85 4.8 11.8 L5.4 11.65 6.15 11.65 Q7.15 11.65 7.95 12.4 L8.1 12.55 Q8.7 13.3 8.7 14.2 L8.7 20.35 Q8.7 21.3 8.1 22 L7.8 22.3 Q7.05 22.9 6.15 22.9 L0 22.9 Q-2.7 22.9 -2.6 20.35 L-2.6 19.75 Q-2.6 19.05 -2.1 18.6 L-1.65 18.1 -2 17.8 -5.55 14.35 -9.6 18.4 -9.6 24.4 Q-9.6 25.45 -10.4 26.2 -11.15 27 -12.2 27 L-24.35 27 Q-27 27 -27 24.4 L-27 12.15 Q-27 9.55 -24.35 9.55 L-18.45 9.55 -14.4 5.5 -18.15 1.65 -18.65 2.2 Q-19.1 2.55 -19.8 2.55 L-20.3 2.55 Q-23 2.55 -22.95 0 L-22.95 -6.15 Q-22.95 -8.75 -20.3 -8.75 L-14.15 -8.75 Q-13.2 -8.75 -12.35 -7.95 L-12.2 -7.8 Q-11.7 -7.05 -11.7 -6.15 L-11.7 -5.45 Q-11.7 -4.85 -12.15 -4.35 L-12.5 -3.95 -10.7 -2.15 13.35 -26.3 13.5 -26.45"/>
+  </symbol>
+
+  <!-- lifelink = heart (Kenney) -->
+  <symbol id="kw-lifelink" viewBox="-32 -32 64 64">
+    <path fill="currentColor" d="M21.05 -16 Q25 -12.05 25 -6.4 25 -0.85 21.05 3.15 L21 3.2 20.95 3.25 19 4.85 1.6 19.45 Q0.9 20 0 20 -0.85 20 -1.5 19.45 L-18.9 4.85 Q-19.95 4.15 -20.8 3.25 L-20.9 3.15 Q-25 -0.85 -25 -6.4 -25 -12.05 -20.9 -16 -16.95 -20 -11.3 -20 -5.6 -20 -1.55 -16 L0.05 -14.15 1.7 -16 Q5.65 -20 11.3 -20 17 -20 21.05 -16"/>
+  </symbol>
+
+  <!-- flying = wing (authored) -->
+  <symbol id="kw-flying" viewBox="-32 -32 64 64">
+    <path fill="currentColor" d="M-24 2 Q-6 -18 24 -12 Q12 -7 14 -2 Q4 -5 4 3 Q-8 -1 -8 8 Q-18 7 -24 2 Z"/>
+  </symbol>
+
+  <!-- haste = lightning bolt (authored) -->
+  <symbol id="kw-haste" viewBox="-32 -32 64 64">
+    <path fill="currentColor" d="M6 -28 L-16 6 L-2 6 L-8 28 L20 -8 L4 -8 Z"/>
+  </symbol>
+
+  <!-- trample = footprint (authored) -->
+  <symbol id="kw-trample" viewBox="-32 -32 64 64">
+    <ellipse fill="currentColor" cx="0" cy="10" rx="11" ry="14"/>
+    <circle fill="currentColor" cx="-9" cy="-6" r="4"/>
+    <circle fill="currentColor" cx="-3" cy="-11" r="3.6"/>
+    <circle fill="currentColor" cx="2.5" cy="-12" r="3.4"/>
+    <circle fill="currentColor" cx="8" cy="-10" r="3"/>
+    <circle fill="currentColor" cx="12.5" cy="-6" r="2.6"/>
+  </symbol>
+
+  <!-- vigilance = eye (authored; evenodd punches iris, refills pupil) -->
+  <symbol id="kw-vigilance" viewBox="-32 -32 64 64">
+    <path fill="currentColor" fill-rule="evenodd" d="M-28 0 Q0 -17 28 0 Q0 17 -28 0 Z M12 0 A12 12 0 1 0 -12 0 A12 12 0 1 0 12 0 Z M5 0 A5 5 0 1 0 -5 0 A5 5 0 1 0 5 0 Z"/>
+  </symbol>
+</svg>
