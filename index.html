@@ -1,29 +1,364 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#140f0a" />
-    <meta
-      name="description"
-      content="The Academy — a roguelite card duel. Climb the ladder, pick a prism, out-think your rivals."
-    />
-    <!-- iOS standalone / home-screen install -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Academy" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <title>The Academy</title>
-    <script type="module" crossorigin src="/assets/index-C6x29C3W.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/Geometry-C7Em0fPc.js">
-    <link rel="modulepreload" crossorigin href="/assets/GCManagedHash-DGXKBv4Z.js">
-    <link rel="modulepreload" crossorigin href="/assets/Filter-0QdSQJlb.js">
-    <link rel="modulepreload" crossorigin href="/assets/RenderTargetSystem-CITDd0QE.js">
-    <link rel="modulepreload" crossorigin href="/assets/canvasUtils-Cd2p_rTp.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-i0uOZjm4.css">
-  <link rel="manifest" href="/manifest.webmanifest"></head>
-  <body>
-    <div id="app"></div>
-  </body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Beyond Typical™ — Synergizing a Brighter, Completely Normal Tomorrow</title>
+<meta name="description" content="Beyond Typical is a forward-thinking enterprise delivering best-in-class shareholder value. We are a normal company. Certified 0% cult." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b3a8f'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EB%3C/text%3E%3C/svg%3E" />
+<style>
+  :root{
+    --navy:#16327a; --navy-2:#1b3a8f; --blue:#2563eb; --sky:#e8f0fe;
+    --ink:#1a2233; --slate:#5b6577; --line:#e3e8f0; --bg:#ffffff; --soft:#f6f9fe;
+    --gold:#c9a227; --good:#16a34a;
+    --shadow:0 10px 30px rgba(22,50,122,.10);
+    --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.55}
+  a{color:var(--blue);text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{line-height:1.15;margin:0 0 .4em}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+  .muted{color:var(--slate)}
+  .tiny{font-size:12px}
+
+  /* trust ribbon */
+  .ribbon{background:linear-gradient(90deg,var(--good),#0f9d58);color:#fff;text-align:center;
+    font-size:13px;font-weight:700;letter-spacing:.04em;padding:7px 12px}
+  .ribbon span{opacity:.92}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;gap:18px;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px;color:var(--navy);letter-spacing:-.01em}
+  .brand .mark{width:30px;height:30px;border-radius:7px;background:var(--navy);display:grid;place-items:center;color:#fff;font-weight:900}
+  .brand sup{font-size:9px;color:var(--slate);font-weight:700}
+  nav.links{margin-left:auto;display:flex;gap:22px;align-items:center}
+  nav.links a{color:var(--ink);font-weight:600;font-size:14px}
+  nav.links a:hover{color:var(--blue)}
+  .btn{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:14px;
+    padding:10px 18px;border-radius:9px;border:0;cursor:pointer;box-shadow:var(--shadow);transition:transform .08s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line);box-shadow:none}
+  .btn.gold{background:var(--gold);color:#2a230a}
+
+  /* hero */
+  .hero{background:radial-gradient(120% 90% at 80% -10%,#eef4ff, #ffffff 60%);padding:54px 0 40px;border-bottom:1px solid var(--line)}
+  .hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+  .hero h1{font-size:42px;letter-spacing:-.02em}
+  .hero p.lead{font-size:18px;color:var(--slate);max-width:40ch}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+  .hero figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+  .hero figcaption{font-size:11px;color:var(--slate);padding:8px 12px;border-top:1px solid var(--line);font-style:italic}
+
+  /* logos strip */
+  .logos{padding:22px 0;border-bottom:1px solid var(--line);background:var(--soft)}
+  .logos .wrap{display:flex;align-items:center;gap:26px;flex-wrap:wrap;justify-content:center}
+  .logos span{color:#9aa6ba;font-weight:800;letter-spacing:.06em;font-size:14px;opacity:.9}
+
+  section{padding:56px 0}
+  .section-head{text-align:center;max-width:62ch;margin:0 auto 34px}
+  .section-head h2{font-size:30px}
+
+  /* trust metrics */
+  .metrics{background:var(--navy);color:#fff}
+  .metrics .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .metric{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px}
+  .metric .n{font-size:40px;font-weight:900;letter-spacing:-.02em;color:#fff}
+  .metric .n .u{font-size:20px;color:#9fc0ff}
+  .metric .l{font-size:14px;color:#c7d4ee;margin-top:2px}
+  .metric .sub{font-size:11px;color:#8ea4cf;margin-top:6px}
+
+  /* values */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+  .card .ic{width:42px;height:42px;border-radius:10px;background:var(--sky);display:grid;place-items:center;margin-bottom:12px;font-size:22px}
+  .card h3{font-size:18px}
+  .card p{color:var(--slate);font-size:14px;margin:0}
+  .card .fine{display:block;margin-top:10px;font-size:11px;color:#9aa6ba}
+
+  /* leadership */
+  .team{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .person{text-align:center}
+  .person .pic{background:var(--soft);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .person h4{margin:12px 0 0;font-size:16px}
+  .person .role{color:var(--slate);font-size:13px}
+
+  /* testimonials */
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .quote{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+  .stars{color:var(--gold);font-size:15px;letter-spacing:2px}
+  .quote p{font-size:14px;color:var(--ink);margin:8px 0 12px}
+  .quote .who{font-size:12px;color:var(--slate)}
+
+  /* certs */
+  .certs{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .badges{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .badge{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:13px;font-weight:700;color:var(--navy)}
+  .badge .seal{width:22px;height:22px;border-radius:50%;background:var(--good);color:#fff;display:grid;place-items:center;font-size:13px}
+
+  /* CTA band */
+  .band{background:linear-gradient(120deg,var(--navy),var(--navy-2));color:#fff;text-align:center}
+  .band h2{font-size:30px}
+  .band p{color:#c7d4ee;max-width:54ch;margin:0 auto 20px}
+
+  /* footer */
+  footer{background:#0f1b3d;color:#aeb9d4;font-size:13px;padding:40px 0 70px}
+  footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;margin-bottom:26px}
+  footer h5{color:#fff;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px}
+  footer a{color:#aeb9d4;display:block;margin:6px 0}
+  footer a:hover{color:#fff}
+  footer .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;color:#7e8bad;font-size:12px;line-height:1.6}
+
+  /* cookie / consent bar */
+  .consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:80;background:#fff;border:1px solid var(--line);
+    border-radius:14px;box-shadow:0 16px 50px rgba(10,20,50,.25);padding:14px 16px;display:flex;gap:14px;align-items:center;max-width:720px;margin:0 auto}
+  .consent p{margin:0;font-size:13px;color:var(--slate)}
+  .consent .acts{margin-left:auto;display:flex;gap:8px;flex-shrink:0}
+  .consent button{font-size:13px;font-weight:700;border-radius:8px;padding:8px 12px;border:1px solid var(--line);background:#fff;cursor:pointer}
+  .consent button.primary{background:var(--blue);color:#fff;border:0}
+
+  @media(max-width:860px){
+    .hero .grid{grid-template-columns:1fr}
+    .hero h1{font-size:32px}
+    .metrics .grid,.cards,.quotes{grid-template-columns:1fr}
+    .team{grid-template-columns:repeat(2,1fr)}
+    footer .cols{grid-template-columns:1fr 1fr}
+    nav.links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="ribbon">✓ Independently Certified <strong>0% Cult</strong> &nbsp;·&nbsp; <span>Now in our 7th consecutive quarter of Definitely Being a Normal Company™</span></div>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="brand"><span class="mark">B</span> Beyond&nbsp;Typical<sup>™</sup></div>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#trust">Trust Metrics</a>
+      <a href="#values">Values</a>
+      <a href="#team">Leadership</a>
+      <a href="#careers">Careers</a>
+      <a class="btn" href="https://prism.beyondtypical.dev">Member Portal →</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <div class="eyebrow">Enterprise Synergy Solutions</div>
+      <h1>Empowering a Brighter, Completely&nbsp;Normal Tomorrow.</h1>
+      <p class="lead">Beyond Typical is a forward-thinking, results-driven enterprise delivering best-in-class shareholder value across all verticals. We are a company. That is the whole thing. Please stop asking about the basement.</p>
+      <div class="cta-row">
+        <a class="btn" href="#careers">Request a Consultation</a>
+        <a class="btn ghost" href="#trust">View Our Trust Metrics</a>
+      </div>
+      <p class="tiny muted" style="margin-top:14px">No robes required. Attendance is 100% voluntary and also mandatory.*</p>
+    </div>
+    <figure>
+      <!-- Two smiling executives shaking hands -->
+      <svg viewBox="0 0 520 340" width="100%" role="img" aria-label="Two smiling business people in suits shaking hands">
+        <rect width="520" height="340" fill="#eef4ff"/>
+        <circle cx="260" cy="74" r="40" fill="#dfe9ff"/>
+        <!-- left exec -->
+        <g>
+          <rect x="70" y="150" width="150" height="170" rx="20" fill="#22356b"/>
+          <path d="M95 320 V210 q0-22 22-22 h66 q22 0 22 22 v110 Z" fill="#2b4488"/>
+          <path d="M132 188 l13 24 13-24 18 14 -22 118 h-18 l-22-118 Z" fill="#fff"/>
+          <path d="M145 192 l0 70 8 28 8-28 0-70 -8 10 Z" fill="#c9a227"/>
+          <circle cx="145" cy="120" r="40" fill="#f1c79a"/>
+          <path d="M110 112 q35 -34 70 0 q-6 -34 -35 -34 q-29 0 -35 34Z" fill="#5a4632"/>
+          <circle cx="132" cy="118" r="4" fill="#26303f"/><circle cx="158" cy="118" r="4" fill="#26303f"/>
+          <path d="M126 134 q19 20 38 0" stroke="#b5651d" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- right exec -->
+        <g>
+          <rect x="300" y="150" width="150" height="170" rx="20" fill="#1f6b46"/>
+          <path d="M325 320 V210 q0-22 22-22 h66 q22 0 22 22 v110 Z" fill="#2a875a"/>
+          <path d="M362 188 l13 24 13-24 18 14 -22 118 h-18 l-22-118 Z" fill="#fff"/>
+          <path d="M375 192 l0 70 8 28 8-28 0-70 -8 10 Z" fill="#7a3b8f"/>
+          <circle cx="375" cy="120" r="40" fill="#e8b384"/>
+          <path d="M338 110 q37 -40 74 0 l0 -8 q-37 -30 -74 0Z" fill="#2c2c2c"/>
+          <circle cx="362" cy="118" r="4" fill="#26303f"/><circle cx="388" cy="118" r="4" fill="#26303f"/>
+          <path d="M356 134 q19 20 38 0" stroke="#a0522d" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- handshake -->
+        <g>
+          <rect x="185" y="244" width="150" height="26" rx="13" fill="#f1c79a"/>
+          <rect x="250" y="240" width="44" height="34" rx="12" fill="#e8b384"/>
+          <circle cx="260" cy="257" r="20" fill="#f4d0a6" stroke="#d9ad7d" stroke-width="2"/>
+        </g>
+        <!-- sparkle of pure corporate joy -->
+        <text x="225" y="60" font-size="22" fill="#c9a227">✦</text>
+        <text x="300" y="48" font-size="16" fill="#c9a227">✦</text>
+      </svg>
+      <figcaption>Pictured: valued stakeholders engaging in a legally-binding, completely consensual gesture of partnership. (Stock photo. These are real employees who are fine.)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- LOGO STRIP -->
+<div class="logos">
+  <div class="wrap">
+    <span>As Not-Featured In</span>
+    <span>GLOBOCORP</span><span>SYNERGEX</span><span>VAGUE&nbsp;HOLDINGS</span><span>INITECH&nbsp;II</span><span>THE&nbsp;CONSORTIUM*</span>
+  </div>
+</div>
+
+<!-- TRUST METRICS -->
+<section class="metrics" id="trust">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" style="color:#9fc0ff">Radical Transparency Dashboard</div>
+      <h2 style="color:#fff">Our Trust, By the Numbers</h2>
+      <p style="color:#c7d4ee">Audited quarterly by a reputable third party who is not in any way related to us, blinking included.</p>
+    </div>
+    <div class="grid">
+      <div class="metric"><div class="n">0<span class="u">%</span></div><div class="l">Cult Trust Index</div><div class="sub">Down 0% year-over-year. Industry-leading.</div></div>
+      <div class="metric"><div class="n">100<span class="u">%</span></div><div class="l">Smiles Voluntarily Given</div><div class="sub">Verified by the Department of Genuine Happiness.</div></div>
+      <div class="metric"><div class="n">0</div><div class="l">Ritual Sacrifices This Quarter</div><div class="sub">Consistent with prior quarters. As expected.</div></div>
+      <div class="metric"><div class="n">0</div><div class="l">Robes On Company Premises</div><div class="sub">We checked. Twice. Nothing in the closet.</div></div>
+      <div class="metric"><div class="n">1</div><div class="l">All-Seeing Eye (Decorative)</div><div class="sub">Purely a branding choice. It does not watch you.</div></div>
+      <div class="metric"><div class="n">$&infin;</div><div class="l">Shareholder Enlightenment</div><div class="sub">Returns are spiritual and also financial.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / VALUES -->
+<section id="values">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Our Core Values</div>
+      <h2>Principles We Are Legally and Spiritually Committed To</h2>
+      <p class="muted">A people-first culture built on synergy, accountability, and absolutely nothing happening at 3 A.M.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="ic">🤝</div><h3>Synergy</h3><p>We leverage cross-functional alignment to maximize collective outcomes. The collective is optional. The collective loves you.</p><span class="fine">*becoming one is a stretch goal, not a requirement</span></div>
+      <div class="card"><div class="ic">🔍</div><h3>Radical Transparency</h3><p>We believe in open books, open doors, and open minds — with the reasonable exception of the basement, the chamber, and the Tuesday thing.</p><span class="fine">*the Tuesday thing is a normal stand-up</span></div>
+      <div class="card"><div class="ic">🌿</div><h3>Belonging</h3><p>Here, you are seen. You are heard. You are, in a very ordinary HR sense, ours. Welcome to the family. The regular kind.</p><span class="fine">*exits available 24/7, mostly</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="team" style="background:var(--soft);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Leadership</div>
+      <h2>The Visionaries Steering Our Normal Ship</h2>
+      <p class="muted">Each smiling with the exact same warmth, because our culture is just that consistent.</p>
+    </div>
+    <div class="team" id="teamGrid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Stakeholder Voices</div>
+      <h2>Don't Take Our Word For It</h2>
+      <p class="muted">Real, unscripted testimonials from people who are free to leave and simply choose not to.</p>
+    </div>
+    <div class="quotes">
+      <div class="quote"><div class="stars">★★★★★</div><p>"I joined for the dental plan and was NOT absorbed into a shared consciousness. Ten out of ten."</p><div class="who">— Greg P., Verifiable Individual Human</div></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"They told me I could leave any time, and I genuinely believe them with my whole heart, which is still mine."</p><div class="who">— Susan T., Senior Associate of Belonging</div></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"The chanting is optional and the robes are, I cannot stress this enough, not provided. A normal workplace."</p><div class="who">— Anonymous, Floor 7</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<section class="certs">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Compliance &amp; Accreditation</div><h2>Officially, Verifiably Fine</h2></div>
+    <div class="badges">
+      <div class="badge"><span class="seal">✓</span> ISO 9001: Not A Cult</div>
+      <div class="badge"><span class="seal">✓</span> SOC 2: Souls Optional</div>
+      <div class="badge"><span class="seal">✓</span> Better Business Bureau of the Beyond</div>
+      <div class="badge"><span class="seal">✓</span> 0% Hooded Gatherings (Self-Reported)</div>
+      <div class="badge"><span class="seal">✓</span> Audited by Someone, Probably</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="band" id="careers">
+  <div class="wrap">
+    <div class="eyebrow" style="color:#9fc0ff">Careers &amp; Onboarding</div>
+    <h2>Begin Your Completely Optional Journey</h2>
+    <p>Step into the Academy — our award-winning professional development program. Climb the ladder. Refine your craft. Ascend. (In a corporate-growth sense. Obviously.)</p>
+    <a class="btn gold" href="https://prism.beyondtypical.dev">Enter the Member Portal →</a>
+    <p class="tiny" style="color:#9fc0ff;margin-top:14px">By entering you agree to flourish. No blood oath required at this time.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:8px"><span class="mark">B</span> Beyond Typical<sup style="color:#7e8bad">™</sup></div>
+        <p style="margin:0;max-width:34ch">Synergizing tomorrow's paradigms, today, normally. A wholly ordinary entity registered in a real jurisdiction on Earth.</p>
+      </div>
+      <div><h5>Company</h5><a href="#about">About Us</a><a href="#values">Our Values</a><a href="#team">Leadership</a><a href="#">The Founder (do not photograph)</a></div>
+      <div><h5>Resources</h5><a href="#trust">Trust Metrics</a><a href="#">Whitepapers</a><a href="#">The Reading (optional)</a><a href="https://prism.beyondtypical.dev">Member Portal</a></div>
+      <div><h5>Trust &amp; Safety</h5><a href="#">Privacy Policy</a><a href="#">Definitely-Not-Doctrine</a><a href="#">Report a Robe</a><a href="#">Exit Interview FAQ</a></div>
+    </div>
+    <div class="legal">
+      © <span id="yr">2026</span> Beyond Typical Holdings, LLC, Ltd, &amp; Eternal. All rights reserved across all realities.
+      Beyond Typical is a normal company providing normal services. Past enlightenment does not guarantee future returns.
+      The Eye is decorative. The basement is for storage. Smiles depicted are real and were given freely.
+      Not financial, legal, or spiritual advice. Void where prohibited. You are valued. You are seen. You are free to go.*
+      <br><span style="color:#5e6b91">*subject to the terms of the Belonging Agreement, §4(c).</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CONSENT BAR -->
+<div class="consent" id="consent">
+  <p>🍪 We use cookies — the edible kind, and only what is freely offered. We collect nothing but your enthusiasm. And your email. And, ideally, your trust.</p>
+  <div class="acts">
+    <button onclick="document.getElementById('consent').remove()">I Consent</button>
+    <button class="primary" onclick="document.getElementById('consent').remove()">I Consent Enthusiastically</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // Leadership team — all smiling identically (the consistency is the point).
+  const team = [
+    ["Chad Synergy","Chief Executive Officer","#22356b","#c9a227","#f1c79a","#5a4632"],
+    ["Karen Verticals","Chief Financial Officer","#1f6b46","#7a3b8f","#e8b384","#2c2c2c"],
+    ["B. Hill","SVP, Strategic Ascension","#7a2f2f","#3a6ea5","#f1c79a","#3a2a1a"],
+    ["[REDACTED]","Founder & Eternal Chair","#3a3a4a","#c9a227","#e0b58a","#1a1a1a"]
+  ];
+  const grid = document.getElementById('teamGrid');
+  grid.innerHTML = team.map(([name,role,suit,tie,skin,hair])=>`
+    <div class="person">
+      <div class="pic">
+        <svg viewBox="0 0 200 200" width="100%" aria-label="${name}, smiling">
+          <rect width="200" height="200" fill="#f0f5ff"/>
+          <rect x="40" y="120" width="120" height="90" rx="24" fill="${suit}"/>
+          <path d="M70 210 V165 q0-16 16-16 h28 q16 0 16 16 v45Z" fill="#fff"/>
+          <path d="M92 149 l8 16 8-16 12 10 -16 60 h-8 l-16-60Z" fill="#fff"/>
+          <path d="M100 152 l0 50 6 18 6-18 0-50 -6 8Z" fill="${tie}"/>
+          <circle cx="100" cy="92" r="42" fill="${skin}"/>
+          <path d="M60 84 q40 -42 80 0 q-4 -34 -40 -34 q-36 0 -40 34Z" fill="${hair}"/>
+          <circle cx="86" cy="90" r="4.5" fill="#26303f"/><circle cx="114" cy="90" r="4.5" fill="#26303f"/>
+          <path d="M80 108 q20 24 40 0" stroke="#b5651d" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h4>${name}</h4>
+      <div class="role">${role}</div>
+    </div>`).join('');
+</script>
+</body>
 </html>
